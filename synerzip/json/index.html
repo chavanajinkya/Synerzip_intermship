@@ -1,0 +1,52 @@
+<!-- json is javascript object notation  is a data representation format used for apis and config file  .
+it is lightweight and easy to read aand write 
+it integrates nicely with javascript  -->
+
+<html>
+<title>json</title>
+
+<head></head>
+
+<body>
+
+
+
+    <script>
+        let companies =                          // json can directly integrate so we can directly write json inside javascript 
+            `           
+[
+
+{
+        "name": "Ajinkya",
+        "numberofEmployees": 10000,
+        "ceo": "Mary",
+        "rating": 3.6,
+        "products":["tyres", "cycles", "bikes"]
+    },
+    {
+        "name": "small startup",
+        "numberofEmployees": 3,
+        "ceo": null,
+        "rating": 4.3,
+        "products":["automobiles"]
+        
+    }
+
+
+
+
+]`
+        document.write(companies);
+        console.log(companies);
+        // use backticks to convert object to string
+        document.write("<br><br>");
+        // console.log(JSON.stringify(companies));  //to convert object into strings
+
+
+        console.log(JSON.parse(companies));
+        console.log(JSON.parse(companies)[0].name); //to create object
+    </script>
+
+</body>
+
+</html>

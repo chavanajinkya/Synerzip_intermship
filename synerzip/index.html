@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <title></title>
+
+
+    <style>
+        #mydiv {
+            align-items: center;
+            width: fit-content;
+            height: 50%;
+            background-color: aqua;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- jquery is a lightweight javascript library  -->
+    <!-- jquery is used to perform task in short code
+        jquery also simplifies calling ajax and DOM manipulation and also css manipulation
+        jquery us browser independent
+         -->
+    <!-- 
+         <button> Click Me </button>
+            
+    
+
+         <script>  
+
+
+
+        //  selectors //
+             $(document).ready( function(){
+                $('button').click( function(){
+                    alert("My first jquery");
+                });
+             });
+
+
+
+
+
+         </script>
+
+
+ -->
+    <!-- setting text content -->
+
+    <h2>Setting Text Content</h2>
+
+    <p id="01">Hello World!</p>
+    <p id="02">Hello Ajinkya!</p>
+
+    <script>
+        const myElement = document.getElementById("01");
+        myElement.textContent = "Hello Aj!";
+    </script>
+
+
+
+
+
+
+    <!-- to get the text content  -->
+
+
+    <h2>Get Text Content</h2>
+    <p id="01">Hello Ajinkya!</p>
+    <p id="02">Hello Pramod!</p>
+    <p id="03">Hello Chavan!</p>
+
+    <p id="demo"></p>
+
+    <script>
+        $(document).ready(function () {
+            var myText = $("#02").text();
+            $("#demo").text(myText);
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- setting the html  -->
+
+
+    <h2>Set HTML</h2>
+    <div id="04">
+        <p>Hello Ajinkya!</p>
+    </div>
+    <div id="05">
+        <p>Hello AJ!</p>
+    </div>
+
+    <p id="demo1"></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#05").html("<p>Hello World!</p>");
+        });
+
+    </script>
+
+
+
+    <!-- set the style of html element -->
+
+    <p id="demo3">Change the style of an HTML element.</p>
+
+    <script>
+        $(document).ready(function () {
+            $("#demo3").css("font-size", "35px");
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <h1>jQuery - Show/Hide Div on Button Click using jQuery.</h1>
+    <p><input type="button" value="Show/Hide" id="btnShowHide" /></p>
+    <div id="divShowHide" style="background-color:aqua ; width: 100px; height: 100px;">
+        Welcome to IncludeHelp.
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnShowHide").click(function () {
+                $("#divShowHide").toggle();
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript DOM -->
+
+    <script>
+        $(document).ready(function () {
+            $("#id02").remove();
+        });
+    </script>
+
+
+
+
+    <!-- getting  parent element  -->
+    <h2>Getting Parent HTML Element</h2>
+    <p id="06">Hello World!</p>
+    <p id="07">Hello Sweden!</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#demo2").text($("#06").parent().prop("nodeName"));
+        });
+
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
